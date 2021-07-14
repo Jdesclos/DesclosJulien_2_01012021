@@ -79,7 +79,7 @@ header a {
 }
 .select:hover{
     background-color: #0065FC;
-    color: #ffff;
+    color: #DEEBFF;
     transition-duration: 1s;
 }
 .select input{
