@@ -70,6 +70,12 @@ header a {
     border-radius: 0% 20% 20% 0%;
     color: white;
 }
+#barre_recherche input:nth-child(2):hover{
+    cursor: pointer;
+    background-color: white;
+    color:#0065FC;
+    transition-duration: 0.5s;
+}
 .select{
     margin-left: 30px;
     font-weight: bold;
@@ -81,6 +87,28 @@ header a {
     background-color: #0065FC;
     color: #DEEBFF;
     transition-duration: 1s;
+    cursor: pointer;
+}
+.select:hover span{
+    background-color: white;
+    color: #0065FC;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.select:active{
+    background-color: #0065FC;
+    color: #DEEBFF;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.select:active span{
+    background-color: white;
+    color: #0065FC;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.select:hover label{
+    cursor: pointer;
 }
 .select input{
     display:none;
@@ -107,4 +135,90 @@ h2{
     color: #0065FC;
     padding: 5px 9px;
     border-radius: 50%;
+}
+section{
+    display: flex;
+}
+
+#hebergements{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 2;
+    padding: 50px 45px 0px;
+    border-radius: 25px;
+}
+#populaire{
+    flex: 1;
+    align-items: center;
+    margin-left: 40px;
+    padding: 50px ;
+    background-color: #F2F2F2 ;
+}
+.img_hebergement img{
+    max-height: 115px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+.lst_hebergement{
+    max-height: 200px;
+    max-width: 250px;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #e4e4e4;
+}
+.h_3{
+    font-weight: bold;
+}
+h3 {
+    font-size: 12px;
+}
+.lst_hebergement p, h3 {
+    margin: 10px;
+}
+.img_popu img{
+    max-width: 240px;
+    max-height: 115px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.lst_hebergement p{
+    font-size: 10px;
+}
+.lst_popu{
+    max-height: 200px;
+    max-width: 250px;
+    width: 250px;
+    height: 200px;
+}
+.titre_section{
+    width:100%;
+    font-weight: bold;
+    margin: 0px;
+}
+.more{
+    width: 100%;
+    font-weight: bold;
+    margin: 0px;
+    align-items: center;
+    height: auto;
+}
+.star_rate{
+    font-size: 12px;
+    padding-left: 10px;
+    color: #0065FC;
+}
+.empty{
+    color: #DEEBFF;
 }
