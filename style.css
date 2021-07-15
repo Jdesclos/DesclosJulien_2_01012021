@@ -136,9 +136,7 @@ h2{
     padding: 5px 9px;
     border-radius: 50%;
 }
-section{
-    display: flex;
-}
+
 
 #hebergements{
     background-color: #F2F2F2;
@@ -151,10 +149,15 @@ section{
 }
 #populaire{
     flex: 1;
-    align-items: center;
     margin-left: 40px;
     padding: 50px ;
     background-color: #F2F2F2 ;
+    max-width: 420px;
+    border-radius: 25px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
 }
 .img_hebergement img{
     max-height: 115px;
@@ -175,32 +178,42 @@ section{
     border-radius: 25px;
     box-shadow: 5px 5px 5px #e4e4e4;
 }
+.lst_hebergement:hover{
+    box-shadow: 5px 5px 5px;
+    transition-duration: 0.5s;
+}
+.more a:hover{
+    color: #0065FC;
+    transition-duration: 0.7s;
+}
 .h_3{
     font-weight: bold;
+    width: 100%;
 }
-h3 {
-    font-size: 12px;
-}
-.lst_hebergement p, h3 {
-    margin: 10px;
+
+.lst_hebergement a{
+    background-color: none;
 }
 .img_popu img{
-    max-width: 240px;
-    max-height: 115px;
     width: 100%;
     height: 100%;
     display: block;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    object-fit: cover;
+}
+.img_popu{
+    max-width: 128px;
 }
 .lst_hebergement p{
     font-size: 10px;
 }
 .lst_popu{
-    max-height: 200px;
-    max-width: 250px;
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-height: 143px;
+    max-width: 345px;
 }
 .titre_section{
     width:100%;
@@ -216,9 +229,83 @@ h3 {
 }
 .star_rate{
     font-size: 12px;
-    padding-left: 10px;
     color: #0065FC;
 }
 .empty{
     color: #DEEBFF;
+}
+#popu{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#popu span{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.flex{
+    margin-top: 26px;
+}
+aside a{
+    width: 100%;
+    height: 143px;
+    background-color: white;
+    margin-bottom: 32px;
+    padding: 5px;
+    border-radius: 25px;
+}
+.blabla_popu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20PX;
+}
+.blabla_popu p{
+    margin: 5px 0px;
+}
+.blabla_popu .star_rate{
+margin-top:15px;
+}
+section H3{
+    margin-top: 10PX;
+    margin-bottom: 14PX;
+}
+aside a:hover{
+    box-shadow: 5px 5px 5px;
+    transition-duration: 0.5s;
+}
+.activites{
+    display: flex;
+    justify-content: space-between;
+}
+.activite{
+    width: 300px;
+}
+.activite img{
+    width: 100%;
+    object-fit: cover;
+    height: 155px;
+}
+.a1 img, .a2 img{
+    width: 100%;
+    object-fit: cover;
+    height: 390px;
+}
+.port_cal, .pom_frioul{
+    width: 300px;
+}
+.port_cal img{
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+.pom_frioul{
+    display: flex;
+    flex-direction: column;
+}
+.activites h2{
+    width: 100%;
+}
+.blabla_heberg{
+    padding-left: 15px;
 }
