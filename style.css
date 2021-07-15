@@ -309,3 +309,41 @@ aside a:hover{
 .blabla_heberg{
     padding-left: 15px;
 }
+.activite{
+    box-shadow: 5px 5px 5px #e4e4e4;
+    border-radius: 25px;
+    padding-bottom: 20px;
+}
+.activite h3{
+    margin: 23px 0px 0px  20px;
+}
+.activite img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.pom_frioul a:nth-child(2){
+    margin-top: 10px;
+}
+.activite:hover{
+    box-shadow: 5px 5px 5px;
+}
+footer{
+    background-color: #e4e4e4;
+    padding-top: 50px ;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.foot ul{
+    list-style: none;
+}
+.foot li {
+    margin-top: 20px;
+}
+.top_foot{
+    margin-top: 0px;
+}
+.foot li:hover a{
+    color:#0065FC;
+    transition-duration: 0.7s;
+}
