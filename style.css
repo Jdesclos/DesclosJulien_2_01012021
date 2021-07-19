@@ -106,6 +106,7 @@
     }
     .select{
         margin-left: 0px !important;
+        margin-top: 15px;
     }
     #populaire{
         margin-left:0px !important;
@@ -318,6 +319,7 @@
 }
 body{
     background-color: white;
+    margin: auto;
 }
 #blocpage {
     font-family: 'Raleway';
@@ -394,7 +396,7 @@ header a {
 }
 #barre_recherche input:nth-child(2):hover{
     cursor: pointer;
-    background-color: white;
+    background-color: #e4e4e4;
     color:#0065FC;
     transition-duration: 0.5s;
 }
@@ -470,13 +472,13 @@ h2{
     justify-content: space-around;
     flex-wrap: wrap;
     flex: 2;
-    padding: 50px 45px 0px;
+    padding: 50px 30px 0px;
     border-radius: 25px;
 }
 #populaire{
     flex: 1;
     margin-left: 40px;
-    padding: 50px ;
+    padding: 50px 30px;
     background-color: #F2F2F2 ;
     max-width: 420px;
     border-radius: 25px;
